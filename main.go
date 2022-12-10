@@ -12,7 +12,7 @@ import (
 
 func main(){
     r := gin.Default()
-    r.GET("/Draw", func(ctx *gin.Context){
+    r.GET("/words", func(ctx *gin.Context){
         word0, word1  := GetWords()
         ctx.JSON(200, gin.H{"0":word0,"1":word1,})
     })
