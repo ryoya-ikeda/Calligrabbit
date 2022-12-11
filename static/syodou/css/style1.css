@@ -9,36 +9,35 @@ body{
 }
 
 .page-title{
-    font-size: 100px;
+    font-size: 130px;
     font-family:"HGP行書体", serif;
+    padding: 120px 100px;
     text-align: center
 }
 
 .inner {
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
   }
 
-.button1,.button2 {
+button {
     background-color: #000000;
     color: #FAF9F9;
-    font-size: 1.2rem;
+    font-size: 2.0rem;
     font-family:"HGP行書体", serif;
-    padding: 10px 20px;
-    max-width: 230px;
+    white-space: nowrap;
+    padding: 25px 60px;
     border-radius: 5px;
-    margin: 30px auto;
+    margin: 20px 50px;    /* ボタン同士の幅  */
     transition: all 1000ms 0s ease;
     text-decoration:none
   }
 
-  .button1:hover {
+  button {
     background-color:  #7a7a7a;
     transform: translateY(-5px);
   }
 
-  .button2:hover {
-    background-color: #7a7a7a;
-    transform: translateY(-5px);
-  }
+
