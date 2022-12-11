@@ -16,10 +16,10 @@ body{
 }
 
 .inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
   }
 
 button {
@@ -39,5 +39,3 @@ button {
     background-color:  #7a7a7a;
     transform: translateY(-5px);
   }
-
-
