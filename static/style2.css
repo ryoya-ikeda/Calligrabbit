@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.gif {
+    text-align: center;
+    justify-content: center;
+}
+
+​ .tyusen {
+    height: 99vh;
+
+}
+
+​ body {
+    background-image: url("./back.png");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: cover;
+    margin: 0;
+    /* padding: 40px ; */
+}
