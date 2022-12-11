@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+  text-align: center;
+}
+
+
+
+body {
+
+  background-image: url("./f_back.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: cover;
+  padding: 40px;
+}
+
+h1 {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  writing-mode: vertical-rl;
+  font-family: "HGP行書体", serif;
+  color: black;
+  font-size: 200px;
+  padding: 100px;
+}
+
+
+.button {
+
+  background-color: #000000;
+  color: #faf9f9;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  max-width: 230px;
+  border-radius: 5px;
+  margin: 30px auto;
+
+  transition: all 1000ms 0s ease;
+
+}
+
+a {
+  text-decoration: none
+}
+
+a:link {
+  color: #ffffff;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #7a7a7a;
+  color: #000000;
+  transform: translateY(-5px);
+}
