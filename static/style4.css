@@ -29,6 +29,29 @@ h1 {
   padding: 100px;
 }
 
+.first {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  writing-mode: vertical-rl;
+  font-family: "HGP行書体", serif;
+  color: black;
+  font-size: 200px;
+  padding: 100px;
+
+}
+
+.second{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  writing-mode: vertical-rl;
+  font-family: "HGP行書体", serif;
+  color: black;
+  font-size: 200px;
+  padding: 100px;
+
+}
 
 .button {
 
