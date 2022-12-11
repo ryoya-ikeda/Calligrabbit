@@ -12,6 +12,11 @@ import (
 
 func main(){
     r := gin.Default()
+    r.Static("/static", "./static")
+    r.LoadHTMLGlob("./static/syodou/*.html")
+    r.GET("/start", func(ctx *gin.Context) {
+        ctx.HTML(200, "1.html", gin.H{})
+    })
     r.GET("/words", func(ctx *gin.Context){
         word0, word1  := GetWords()
         ctx.JSON(200, gin.H{"0":word0,"1":word1,})
