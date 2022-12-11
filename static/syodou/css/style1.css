@@ -16,10 +16,10 @@ body{
 }
 
 .inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
   }
 
 button {
@@ -34,8 +34,8 @@ button {
     transition: all 1000ms 0s ease;
     text-decoration:none
   }
-
-  button {
+  
+  button:hover {
     background-color:  #7a7a7a;
     transform: translateY(-5px);
   }
