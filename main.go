@@ -15,11 +15,10 @@ import (
 func main() {
 	r := gin.Default()
 	r.Static("/static", "./static")
-	r.LoadHTMLGlob("./static/*.html")
 	r.LoadHTMLGlob("./static/*.tmpl")
 	// スタート画面
 	r.GET("/start", func(ctx *gin.Context) {
-		ctx.HTML(200, "index1.html", gin.H{})
+		ctx.HTML(200, "./index1.html", gin.H{})
 	})
 
 	// 抽選処理
