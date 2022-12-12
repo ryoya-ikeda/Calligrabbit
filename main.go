@@ -20,17 +20,23 @@ func main() {
 	r.LoadHTMLGlob("./static/syodou/*.tmpl")
 	// スタート画面
 	r.GET("/start", func(ctx *gin.Context) {
-		ctx.HTML(200, "index1.html", gin.H{})
+		ctx.HTML(200, "index1.tmpl", gin.H{})
 	})
 
 	// 抽選処理
 	r.GET("/words", func(ctx *gin.Context) {
-		word0, word1 := GetWords()
-		ctx.JSON(200, gin.H{"0": word0, "1": word1})
+		//word0, word1 := GetWords()
+		//ctx.JSON(200, gin.H{"0": word0, "1": word1})
+		ctx.HTML(200, "index1.tmpl", gin.H{})
+		time.Sleep(3 * time.Second)
+		ctx.Request.URL.Path = "/result"
+		r.HandleContext(ctx)
+
 	})
 	// 文字追加画面を表示
 	r.GET("/add", func(ctx *gin.Context) {
 		ctx.HTML(200, "index5.tmpl", gin.H{})
+
 	})
 
 	// 文字追加処理
@@ -39,7 +45,6 @@ func main() {
 	//抽選画面から遷移
 	r.GET("/result", func(ctx *gin.Context) {
 		word0, word1 := GetWords()
-		time.Sleep(3 * time.Second)
 		//time.Sleep(3 * time.Second)
 		ctx.HTML(200, "index4.tmpl", gin.H{"First": word0, "Second": word1})
 	})
